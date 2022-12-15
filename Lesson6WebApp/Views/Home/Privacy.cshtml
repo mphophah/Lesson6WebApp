@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="card">
+    <div class="card-header">
+        <div class="wrapper-inner-card d-flex justify-content-between align-items-center">
+            <h3 class="text-uppercase">Add New Loan</h3>
+        </div>
+    </div>
+    <div class="col-md-12 card-body">
+        <form asp-action="Create" enctype="multipart/form-data" class="">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>FirsName</label>
+                    <input type="text" class="form-control" placeholder="firstname">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>LastName</label>
+                    <input type="text" class="form-control" placeholder="lastname">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>dateofbirth</label>
+                    <input type="date" class="form-control" placeholder="1991/03/25">
+                </div>
+            </div>
+
+            <div class="form-group mt-3">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Add New Loan</button>
+            </div>
+        </form>
+    </div>
+</div>
